@@ -731,6 +731,8 @@ CONFIG_INET_XFRM_MODE_TUNNEL=y
 # CONFIG_INET_XFRM_MODE_BEET is not set
 # CONFIG_INET_LRO is not set
 # CONFIG_INET_DIAG is not set
+# Set default TCP RWIN to 64K
+CONFIG_LARGE_TCP_INITIAL_BUFFER=y
 # CONFIG_TCP_CONG_ADVANCED is not set
 CONFIG_TCP_CONG_CUBIC=y
 CONFIG_DEFAULT_TCP_CONG="cubic"
@@ -1248,7 +1250,7 @@ CONFIG_WLAN=y
 # CONFIG_ATH_COMMON is not set
 # CONFIG_BCM4329 is not set
 CONFIG_BCMDHD=m
-CONFIG_BCMDHD_FW_PATH="/system/etc/firmware/fw_bcmdhd.bin"
+CONFIG_BCMDHD_FW_PATH="/system/vendor/firmware/fw_bcmdhd.bin"
 CONFIG_BCMDHD_NVRAM_PATH="/proc/calibration"
 # CONFIG_HOSTAP is not set
 # CONFIG_IWM is not set
@@ -1257,7 +1259,7 @@ CONFIG_BCMDHD_NVRAM_PATH="/proc/calibration"
 # CONFIG_MWIFIEX is not set
 # CONFIG_QUALCOMM_WLAN is not set
 # CONFIG_BCM4329_248 is not set
-
+CONFIG_BCM4329_248=m
 #
 # WiMAX Wireless Broadband devices
 #
